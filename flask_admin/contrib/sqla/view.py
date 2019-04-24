@@ -370,7 +370,7 @@ class ModelView(BaseModelView):
 
         if path:
             for item in path:
-                key = (inner_join, item)
+                key = item
                 alias = joins.get(key)
 
                 if key not in joins:
